@@ -1,0 +1,11 @@
+.notif {
+  font-size: 30px;
+  text-transform: uppercase;
+  background: #e74094;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px;
+}

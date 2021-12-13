@@ -1,0 +1,9 @@
+.uno {
+  color: blueviolet;
+  font-size: 30px;
+  margin-right: 50px;
+}
+.dos {
+  display: flex;
+  justify-content: center;
+}

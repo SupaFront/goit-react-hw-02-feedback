@@ -7,11 +7,11 @@ import PropTypes from "prop-types";
 
 export default function FeedbackOptions({ onBtnClick, options }) {
 
-    const elements = options.slice(0,3).map(element =>
+    const elements = options.map(element =>
         
         <button className={styles.btn}key={element} onClick={() => onBtnClick(`${element}`)}>{element[0].toUpperCase()}{element.slice(1)}</button>)
 
-    return <section>{elements}</section>
+    return <section className={styles.sec}>{elements}</section>
     
 }
 

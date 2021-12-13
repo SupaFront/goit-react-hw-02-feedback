@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 
 export default function Statistics({good, neutral, bad, total, countPositiveFeedbackPercentage}) {
    
-   return <ul>
-        <li><p>Good:{good}</p></li>
-        <li><p>Neutral:{neutral}</p></li>
-        <li><p>Bad:{bad}</p></li>
-        <li><p>Total:{total}</p></li>
-        <li><p>Positive feedback:{countPositiveFeedbackPercentage() || 0}%</p></li>
+   return <ul className={styles.dos}>
+        <li><p className={styles.uno}>Good:{good}</p></li>
+        <li><p className={styles.uno}>Neutral:{neutral}</p></li>
+        <li><p className={styles.uno}>Bad:{bad}</p></li>
+        <li><p className={styles.uno}>Total:{total}</p></li>
+        <li><p className={styles.uno}>Positive feedback:{countPositiveFeedbackPercentage() || 0}%</p></li>
    </ul>;
     
 }

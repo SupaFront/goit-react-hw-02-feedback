@@ -1,0 +1,21 @@
+.titlee {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: -4px -4px 0px #71ff90;
+  background: repeating-linear-gradient(
+    45deg,
+    #d62ec8,
+    #26d5ec 1px,
+    rgb(212, 255, 58) 2px,
+    white 3px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 20px auto;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

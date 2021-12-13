@@ -34,11 +34,12 @@ export default class FeedBack extends React.Component {
         const { onBtnClick, countTotalFeedback, countPositiveFeedbackPercentage } = this;
         const { good, neutral, bad } = this.state;
         const total = countTotalFeedback();
+        
         return (<div>
-            <Section title={"Please leave your feedback"}>
+            <Section title="Please leave your feedback">
              <FeedbackOptions options={Object.keys(this.state)}
             onBtnClick={onBtnClick} type="button"></FeedbackOptions></Section>
-            <Section title={"Statistics"}>
+            <Section title="Statistics">
                 {total? <Statistics countPositiveFeedbackPercentage={countPositiveFeedbackPercentage}
                     good={good} neutral={neutral} bad={bad} total={total}
                 ></Statistics> : <Notification message="There is no feedback"/>}</Section>
